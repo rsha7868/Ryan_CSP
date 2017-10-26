@@ -55,10 +55,9 @@
 			isa = PBXGroup;
 			children = (
 				9A117A6D1FA257D400178ABB /* Controller */,
-				9A117A5F1FA256E100178ABB /* Main.storyboard */,
-				9A117A621FA256E100178ABB /* Assets.xcassets */,
-				9A117A641FA256E100178ABB /* LaunchScreen.storyboard */,
-				9A117A671FA256E100178ABB /* Info.plist */,
+				9A117A6E1FA2586D00178ABB /* View */,
+				9A117A701FA258BF00178ABB /* Model */,
+				9A117A6F1FA258BB00178ABB /* Resources */,
 			);
 			path = Ryan_CSP;
 			sourceTree = "<group>";
@@ -70,6 +69,31 @@
 				9A117A5D1FA256E100178ABB /* ViewController.swift */,
 			);
 			path = Controller;
+			sourceTree = "<group>";
+		};
+		9A117A6E1FA2586D00178ABB /* View */ = {
+			isa = PBXGroup;
+			children = (
+				9A117A641FA256E100178ABB /* LaunchScreen.storyboard */,
+				9A117A5F1FA256E100178ABB /* Main.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		9A117A6F1FA258BB00178ABB /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				9A117A671FA256E100178ABB /* Info.plist */,
+				9A117A621FA256E100178ABB /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		9A117A701FA258BF00178ABB /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
