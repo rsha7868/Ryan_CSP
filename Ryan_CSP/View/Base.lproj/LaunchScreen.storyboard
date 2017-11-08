@@ -22,7 +22,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Switch Screen"/>
                                 <connections>
-                                    <segue destination="nod-UQ-RJK" kind="show" id="mfe-hv-vPH"/>
+                                    <segue destination="nod-UQ-RJK" kind="show" id="aFN-pV-d7l"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -34,10 +34,10 @@
             </objects>
             <point key="canvasLocation" x="-100" y="345"/>
         </scene>
-        <!--View Controller-->
+        <!--Algorithoms View-->
         <scene sceneID="Bqa-aZ-euN">
             <objects>
-                <viewController id="nod-UQ-RJK" sceneMemberID="viewController">
+                <viewController id="nod-UQ-RJK" customClass="AlgorithomsView" customModule="Ryan_CSP" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="AKA-Uc-V9R">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -50,6 +50,23 @@
                                     <segue destination="3qe-cu-1fI" kind="show" id="Vew-ca-9WV"/>
                                 </connections>
                             </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="javaSample (1)" translatesAutoresizingMaskIntoConstraints="NO" id="S46-Ub-fUh">
+                                <rect key="frame" x="67" y="451" width="240" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="30" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tcr-yI-JY5">
+                                <rect key="frame" x="75" y="323" width="75" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="Algorithm">
+                                        <attributes>
+                                            <font key="NSFont" size="18" name="Times-Roman"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="lP4-bO-0Io"/>
@@ -125,10 +142,10 @@
             </objects>
             <point key="canvasLocation" x="641" y="1028"/>
         </scene>
-        <!--View Controller-->
+        <!--Algorithoms View-->
         <scene sceneID="GTE-kJ-tR7">
             <objects>
-                <viewController id="3qe-cu-1fI" sceneMemberID="viewController">
+                <viewController id="3qe-cu-1fI" customClass="AlgorithomsView" customModule="Ryan_CSP" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="pwJ-et-Z0W">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -195,4 +212,7 @@
             <point key="canvasLocation" x="1302" y="1733"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="javaSample (1)" width="100" height="100"/>
+    </resources>
 </document>
