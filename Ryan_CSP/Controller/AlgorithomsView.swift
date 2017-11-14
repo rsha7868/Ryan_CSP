@@ -27,26 +27,26 @@ class AlgorithomsView: UIViewController
     private func setupAlgorithm() -> Void
     {
         var algorithmSteps : [String] = []
-        
+
         let algorithm :String = "These are the instructions to create a project in Java using Eclipse and Github \n"
         let stepOne :String = "First, ...."
         let stepTwo :String = "Second ...."
         let stepThree :String = ".... ..."
-        
+
         algorithmSteps = [stepOne, stepTwo, stepThree]
-        
+
         let attributesDictionary = [NSAttributedStringKey.font : AlgorithmText.font]
         let fullAttributedString = NSMutableAttributedString(string: algorithm, attributes: attributesDictionary)
-        
+
         for step in algorithmSteps
         {
             let bullet :String = "=["
             let formattedStep :String = "\n\(bullet) \(step)"
             let attributedStringStep : NSMutableAttributedString = NSMutableAttributedString(string: formattedStep)
             let paragraphStyle = createParagraphStyle()
-            
+
             attributedStringStep.addAttributes([NSAttributedStringKey.paragraphStyle : paragraphStyle], range: NSMakeRange(0,attributedStringStep.length))
-            
+
             fullAttributedString.append(attributedStringStep)
         }
         AlgorithmText.attributedText = fullAttributedString

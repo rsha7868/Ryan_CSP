@@ -9,13 +9,17 @@
 import UIKit
 
 class GlobalImpactView: UIViewController {
-
-    override func viewDidLoad() {
+    @IBOutlet weak var ImageFrame: UIImageView!
+    
+    override func viewDidLoad()
+    {
         super.viewDidLoad()
+        ImageFrame.image = UIImage(named: "Human Rights")
 
         // Do any additional setup after loading the view.
     }
 
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
