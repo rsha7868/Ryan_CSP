@@ -19,6 +19,8 @@
 		9A117A7C1FA25D2C00178ABB /* ProgrammingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A117A7B1FA25D2C00178ABB /* ProgrammingView.swift */; };
 		9A117A7E1FA25D8B00178ABB /* TheInternetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A117A7D1FA25D8B00178ABB /* TheInternetView.swift */; };
 		9A117A801FA25DAD00178ABB /* GlobalImpactView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A117A7F1FA25DAD00178ABB /* GlobalImpactView.swift */; };
+		9AFAC9E31FC35F810080B799 /* StarWars.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AFAC9E21FC35F810080B799 /* StarWars.swift */; };
+		9AFAC9E71FC362170080B799 /* DeathStar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AFAC9E61FC362170080B799 /* DeathStar.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +38,8 @@
 		9A117A7B1FA25D2C00178ABB /* ProgrammingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgrammingView.swift; sourceTree = "<group>"; };
 		9A117A7D1FA25D8B00178ABB /* TheInternetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TheInternetView.swift; sourceTree = "<group>"; };
 		9A117A7F1FA25DAD00178ABB /* GlobalImpactView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlobalImpactView.swift; sourceTree = "<group>"; };
+		9AFAC9E21FC35F810080B799 /* StarWars.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StarWars.swift; sourceTree = "<group>"; };
+		9AFAC9E61FC362170080B799 /* DeathStar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeathStar.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,8 +99,8 @@
 		9A117A6E1FA2586D00178ABB /* View */ = {
 			isa = PBXGroup;
 			children = (
-				9A117A641FA256E100178ABB /* LaunchScreen.storyboard */,
 				9A117A5F1FA256E100178ABB /* Main.storyboard */,
+				9A117A641FA256E100178ABB /* LaunchScreen.storyboard */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -113,6 +117,8 @@
 		9A117A701FA258BF00178ABB /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				9AFAC9E21FC35F810080B799 /* StarWars.swift */,
+				9AFAC9E61FC362170080B799 /* DeathStar.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -153,7 +159,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 9A117A531FA256E000178ABB /* Build configuration list for PBXProject "Ryan_CSP" */;
+			buildConfigurationList = 9A117A531FA256E000178ABB /* Build configuration list for PBXProject "Ryan_CSP[1]" */;
 			compatibilityVersion = "Xcode 8.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -193,9 +199,11 @@
 				9A117A721FA25C3600178ABB /* CreativityView.swift in Sources */,
 				9A117A5E1FA256E100178ABB /* ViewController.swift in Sources */,
 				9A117A761FA25CAC00178ABB /* DataInformationView.swift in Sources */,
+				9AFAC9E31FC35F810080B799 /* StarWars.swift in Sources */,
 				9A117A5C1FA256E100178ABB /* AppDelegate.swift in Sources */,
 				9A117A801FA25DAD00178ABB /* GlobalImpactView.swift in Sources */,
 				9A117A7E1FA25D8B00178ABB /* TheInternetView.swift in Sources */,
+				9AFAC9E71FC362170080B799 /* DeathStar.swift in Sources */,
 				9A117A781FA25CD400178ABB /* AbrstractionView.swift in Sources */,
 				9A117A7C1FA25D2C00178ABB /* ProgrammingView.swift in Sources */,
 			);
@@ -367,7 +375,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		9A117A531FA256E000178ABB /* Build configuration list for PBXProject "Ryan_CSP" */ = {
+		9A117A531FA256E000178ABB /* Build configuration list for PBXProject "Ryan_CSP[1]" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				9A117A681FA256E100178ABB /* Debug */,
