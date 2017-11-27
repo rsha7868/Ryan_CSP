@@ -73,7 +73,7 @@
         <!--View Controller-->
         <scene sceneID="kBf-gW-mhS">
             <objects>
-                <viewController id="yj1-iz-oUG" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="BinaryViewController" id="yj1-iz-oUG" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="0Ez-sk-uJZ">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -108,7 +108,7 @@
         <!--View Controller-->
         <scene sceneID="OSO-pK-7EK">
             <objects>
-                <viewController id="ZyV-Qb-Nbw" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="AndGateViewController" id="ZyV-Qb-Nbw" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="OOW-IM-pLC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -143,7 +143,7 @@
         <!--View Controller-->
         <scene sceneID="Xmb-LZ-OqU">
             <objects>
-                <viewController id="caq-x8-pmg" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="JavaViewController" id="caq-x8-pmg" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="yiP-U1-BsA">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -178,7 +178,7 @@
         <!--View Controller-->
         <scene sceneID="WIx-Go-2qa">
             <objects>
-                <viewController id="KHx-kl-cOx" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="BlockViewController" id="KHx-kl-cOx" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="93f-jO-KYL">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -213,7 +213,7 @@
         <!--View Controller-->
         <scene sceneID="I6t-28-7Pr">
             <objects>
-                <viewController id="EiK-9n-sTf" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="ByteCodeViewController" id="EiK-9n-sTf" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="NnP-ba-HMt">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
