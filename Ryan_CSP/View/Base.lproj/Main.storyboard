@@ -175,6 +175,14 @@
             </objects>
             <point key="canvasLocation" x="2444" y="808.24587706146929"/>
         </scene>
+        <!--Page View Controller-->
+        <scene sceneID="aA3-Jt-lsc">
+            <objects>
+                <pageViewController autoresizesArchivedViewToFullSize="NO" transitionStyle="pageCurl" navigationOrientation="horizontal" spineLocation="min" id="2DK-qh-o7m" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4ht-SA-VeJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1782" y="1486"/>
+        </scene>
         <!--View Controller-->
         <scene sceneID="WIx-Go-2qa">
             <objects>
@@ -258,7 +266,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Change Screen"/>
                                 <connections>
-                                    <segue destination="pdW-4d-T8A" kind="show" id="paH-jn-xyl"/>
+                                    <segue destination="pdW-4d-T8A" kind="show" id="pdU-qx-BZW"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Topic Screen" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Nfz-w1-Scl">
@@ -268,6 +276,14 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XdA-mA-dcy">
+                                <rect key="frame" x="156" y="529" width="46" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <segue destination="KHx-kl-cOx" kind="show" id="az3-2F-ANj"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
