@@ -21,19 +21,42 @@ class InternetMasterViewController : UITableViewController
         ]
     }()
     
+    private lazy var addresses : [String] = []
+    
     private var detailViewController : InternetDetailViewController?
     
-    private func setup -> Void
+    private func setup() -> Void
     {
-        
+         addresses = [
+        "http://www.google.com"
+        "http://www.google.com"
+        "http://www.google.com"
+        "http://www.google.com"
+        "http://www.google.com"
+        "http://www.google.com"
+        ]
+    if let spiltView = splitViewController
+        {
+            let currentController = splitView.viewControllers
+            detailViewController = currentController[0] as? internetDetailViewController
+        }
     }
-
-    override func viewDidLoad() {
+    override func viewDidLoad()
+    {
         super.viewDidLoad()
         setup()
         self.clearsSelectionOnViewWillApear = false
         // Do any additional setup after loading the view.
     }
+    
+    override public func prepare(for seque:UIStoryboardSeque, sender: any?)
+    {
+        if segue.indentifier! == "showDetail"
+        {
+            if let indexPath = self.tabView.indexPath
+        }
+    }
+    
 
     override public func numberOfSecctions(in tableView: UITableView) -> Int
     {
