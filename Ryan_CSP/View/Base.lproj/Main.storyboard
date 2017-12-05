@@ -212,7 +212,7 @@
             </objects>
             <point key="canvasLocation" x="53.600000000000001" y="2168.3658170914546"/>
         </scene>
-        <!--Root View Controller-->
+        <!--Imsge Examples-->
         <scene sceneID="jRI-cF-PVI">
             <objects>
                 <tableViewController clearsSelectionOnViewWillAppear="NO" id="aFk-Vv-V1G" customClass="InternetMasterViewController" customModule="Ryan_CSP" customModuleProvider="target" sceneMemberID="viewController">
@@ -221,13 +221,16 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="reuseidentifier" id="bhu-JV-NCt">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="reuseIdentifier" id="bhu-JV-NCt">
                                 <rect key="frame" x="0.0" y="28" width="375" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="bhu-JV-NCt" id="mNS-Zw-7vu">
                                     <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <segue destination="tfn-Q6-caX" kind="showDetail" id="Veh-oG-kVg"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
@@ -235,7 +238,7 @@
                             <outlet property="delegate" destination="aFk-Vv-V1G" id="NuW-UV-7N4"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Root View Controller" id="TsJ-3S-yPW"/>
+                    <navigationItem key="navigationItem" title="Imsge Examples" id="TsJ-3S-yPW"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="PzK-Ap-g20" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -269,14 +272,6 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="63U-SS-bc6" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-900" y="1836"/>
-        </scene>
-        <!--Page View Controller-->
-        <scene sceneID="aA3-Jt-lsc">
-            <objects>
-                <pageViewController autoresizesArchivedViewToFullSize="NO" transitionStyle="pageCurl" navigationOrientation="horizontal" spineLocation="min" id="2DK-qh-o7m" sceneMemberID="viewController"/>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="4ht-SA-VeJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1782" y="1486"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="WIx-Go-2qa">
@@ -387,6 +382,12 @@
                                     <segue destination="TYW-mW-xCq" kind="show" id="R1A-PE-9av"/>
                                 </connections>
                             </button>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="hQ5-89-zXS" customClass="DrawingView" customModule="Ryan_CSP" customModuleProvider="target" colorLabel="IBBuiltInLabel-Blue">
+                                <rect key="frame" x="40" y="204" width="278" height="184"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.43999009919999998" green="1" blue="0.44982008000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="tintColor" red="0.43999009918292553" green="1" blue="0.44982008000740148" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
@@ -394,7 +395,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="95" y="116"/>
+            <point key="canvasLocation" x="93.599999999999994" y="115.59220389805098"/>
         </scene>
         <!--Algorithoms View-->
         <scene sceneID="IAg-Uf-mHJ">
@@ -510,4 +511,7 @@
         <image name="Human Tour" width="2123" height="619"/>
         <image name="javaSample (1)" width="100" height="100"/>
     </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="Veh-oG-kVg"/>
+    </inferredMetricsTieBreakers>
 </document>

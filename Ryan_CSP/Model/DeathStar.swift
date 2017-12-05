@@ -12,7 +12,7 @@ public class DeathStar : StarWars
     public var starState: Bool
     
     public func star() {
-        <#code#>
+        self.laserState: true
     }
     
     public func isStarWars() -> Bool {

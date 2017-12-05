@@ -9,7 +9,7 @@
 import UIKit
 
 @UIApplicationMain
-class AppDelegate: UIResponder, UIApplicationDelegate {
+class AppDelegate: UIResponder, UIApplicationDelegate, UISplitViewControllerDelegate {
 
     var window: UIWindow?
 
@@ -18,11 +18,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Override point for customization after application launch.
         if let splitViewController = window!.rootViewController as? UISplitViewController
         {
-            let navigationController = splitViewController.viewControllers[splitViewController.viewControllers.count -1] as! UINavigationController
+            let navigationController = splitViewController.viewControllers[splitViewController.viewControllers.count - 1] as! UINavigationController
             
             
             navigationController.topViewController!.navigationItem.leftBarButtonItem = splitViewController.displayModeButtonItem
-            splitVeiwController.delegate = self
+            splitViewController.delegate = self
         }
         
         
@@ -51,6 +51,19 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func applicationWillTerminate(_ application: UIApplication) {
         // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
+    }
+    
+    func splitViewController(_ splitViewController: UISplitViewController,
+                             collapseSecondary scondaryViewController : UIViewController,
+                             onto primaryViewController : UIViewController) -> Bool
+    {
+        guard let secondaryAsNavController = secondaryViewController as? UINavigationController else { return false }
+        guard let topAsDetailController = secondaryAsNavController.topViewController as? InernetDetailViewController else {return false}
+        if topAsDetailController.detailAddress == nil
+        {
+            return true
+        }
+        return false
     }
     
     

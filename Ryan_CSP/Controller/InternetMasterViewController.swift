@@ -17,7 +17,7 @@ class InternetMasterViewController : UITableViewController
         "CSP",
         "Canyons",
         "Twitter",
-        "Swift Guide",
+        "Swift Guide"
         ]
     }()
     
@@ -28,12 +28,11 @@ class InternetMasterViewController : UITableViewController
     private func setup() -> Void
     {
          addresses = [
-        "http://www.google.com"
-        "http://www.google.com"
-        "http://www.google.com"
-        "http://www.google.com"
-        "http://www.google.com"
-        "http://www.google.com"
+        "http://www.google.com",
+        "http://canyons.instructure.com/courses/1137392",
+        "http://www.canyonsdistrict.org/",
+        "http://twitter.com/?lang=en",
+        "http://developer.apple.com/library/content/documentation/Swift/Conceptual/Swift_Programming_Language/TheBasics.html"
         ]
     if let spiltView = splitViewController
         {
@@ -45,7 +44,7 @@ class InternetMasterViewController : UITableViewController
     {
         super.viewDidLoad()
         setup()
-        self.clearsSelectionOnViewWillApear = false
+        self.clearsSelectionOnViewWillAppear = false
         // Do any additional setup after loading the view.
     }
     
@@ -53,7 +52,26 @@ class InternetMasterViewController : UITableViewController
     {
         if segue.indentifier! == "showDetail"
         {
-            if let indexPath = self.tabView.indexPath
+            if let indexPath = self.tabView.indexPathForSelectedRow
+            {
+                let urlString = adresses[indexPath.row]
+                let pageText : String
+                
+                if indexPath.row == 0
+                {
+                    pageText = "All the definitions you wrote..........."
+                }
+                else
+                {
+                    pageText = internetTopics[indextPath.row]
+                }
+                let controller = segue.destination as! InternetDetailViewController
+                
+                controller.detailAdress = urlString
+                controller.detailText = pageText
+                cotrolller.navigationItem = splitViewController?.displayModeButtonItem
+                controller.navigationItem = leftItemSupplementBackButton = true
+            }
         }
     }
     

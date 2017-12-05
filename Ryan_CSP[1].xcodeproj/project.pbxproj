@@ -21,6 +21,7 @@
 		9A117A801FA25DAD00178ABB /* GlobalImpactView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A117A7F1FA25DAD00178ABB /* GlobalImpactView.swift */; };
 		9A1CBD6E1FCF39C400878A2F /* InternetDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A1CBD6D1FCF39C400878A2F /* InternetDetailViewController.swift */; };
 		9A1CBD711FCF3B9900878A2F /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A1CBD701FCF3B9900878A2F /* WebKit.framework */; };
+		9A91DD671FD72B8300B57F04 /* DrawingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A91DD661FD72B8300B57F04 /* DrawingView.swift */; };
 		9AFAC9E31FC35F810080B799 /* StarWars.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AFAC9E21FC35F810080B799 /* StarWars.swift */; };
 		9AFAC9E71FC362170080B799 /* DeathStar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AFAC9E61FC362170080B799 /* DeathStar.swift */; };
 /* End PBXBuildFile section */
@@ -42,6 +43,7 @@
 		9A117A7F1FA25DAD00178ABB /* GlobalImpactView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlobalImpactView.swift; sourceTree = "<group>"; };
 		9A1CBD6D1FCF39C400878A2F /* InternetDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InternetDetailViewController.swift; sourceTree = "<group>"; };
 		9A1CBD701FCF3B9900878A2F /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
+		9A91DD661FD72B8300B57F04 /* DrawingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrawingView.swift; sourceTree = "<group>"; };
 		9AFAC9E21FC35F810080B799 /* StarWars.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StarWars.swift; sourceTree = "<group>"; };
 		9AFAC9E61FC362170080B799 /* DeathStar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeathStar.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -108,6 +110,7 @@
 			children = (
 				9A117A5F1FA256E100178ABB /* Main.storyboard */,
 				9A117A641FA256E100178ABB /* LaunchScreen.storyboard */,
+				9A91DD661FD72B8300B57F04 /* DrawingView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -170,6 +173,7 @@
 				TargetAttributes = {
 					9A117A571FA256E100178ABB = {
 						CreatedOnToolsVersion = 9.0;
+						LastSwiftMigration = 0900;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -215,6 +219,7 @@
 				9A117A5E1FA256E100178ABB /* ViewController.swift in Sources */,
 				9A117A761FA25CAC00178ABB /* DataInformationView.swift in Sources */,
 				9A1CBD6E1FCF39C400878A2F /* InternetDetailViewController.swift in Sources */,
+				9A91DD671FD72B8300B57F04 /* DrawingView.swift in Sources */,
 				9AFAC9E31FC35F810080B799 /* StarWars.swift in Sources */,
 				9A117A5C1FA256E100178ABB /* AppDelegate.swift in Sources */,
 				9A117A801FA25DAD00178ABB /* GlobalImpactView.swift in Sources */,
@@ -358,6 +363,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = "";
@@ -366,6 +372,8 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "CTEC.Ryan-CSP";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "Ryan_CSP/View/Ryan_CSP-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -375,6 +383,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = "";
@@ -383,6 +392,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "CTEC.Ryan-CSP";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "Ryan_CSP/View/Ryan_CSP-Bridging-Header.h";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
