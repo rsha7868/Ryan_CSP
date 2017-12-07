@@ -68,13 +68,13 @@ public class CreativityView: UICollectionViewController, UICollectionViewDelegat
         // Do any additional setup after loading the view.
     }
     
-    override public func numberOfSection(in collectionView: UICollectionView) -> Int
+    override public func numberOfSections(in collectionView: UICollectionView) -> Int
     {
         return 1
     }
     
     override public func collectionView(_ collectionView: UICollectionView,
-                                        numberOfItemSection section: Int) -> Int
+                                        numberOfItemInSection section: Int) -> Int
     {
         return artSelection.count
     }
@@ -98,10 +98,10 @@ public class CreativityView: UICollectionViewController, UICollectionViewDelegat
         
     if indexPath == largePhotoIndexPath
     {
-      let art = artSection[indexpath.row]
+      let art = artSection[indexPath.row]
         let size = collectionView.bounds.size
         let widthScale = (size.width / art!.size.width) * CGFloat(0.80)
-        let largeSize = CGSize(width: art!.size.width * widthscale, height: art!size.height * widthScale)
+        let largeSize = CGSize(width: art!.size.width * widthScale, height: art!.size.height * widthScale)
         
         return largeSize
         

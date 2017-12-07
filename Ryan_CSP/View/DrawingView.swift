@@ -14,9 +14,9 @@ public class DrawingView: UIView
 
     override public func draw(_ rect: CGRect)
     {
-    drawStickFigure().Stroke()
-    drawTurtle()
-    drawMissle()
+    drawStickFigure().stroke()
+    drawTurtle().fill()
+    drawMissle().fill()
     }
 
     private func drawStickFigure() -> UIBezierPath
@@ -43,20 +43,20 @@ public class DrawingView: UIView
     
     }
     
-    private func drawTurtle() -> Void
+    private func drawTurtle() -> UIBezierPath
     {
         let logo = UIBezierPath()
-        UIColor.cyan.setfill()
+        UIColor.blue.setfill()
         logo.move(to: CGPoint(x: 50, y: 250))
         logo.addLine(to: CGPoint(x: 100, y: 300))
         logo.addLine(to: CGPoint(x: 50, y: 300))
         logo.close()
         logo.fill()
     }
-    private func drawMissle() -> Void
+    private func drawMissle() -> UIBezierPath
     {
         let missle = UIBezierPath()
-        UIColor.darkGrey.setfill()
+        UIColor.darkGrey.setStroke()
         missle.move(to:CGPoint(x: 100, y: 60))
         missle.addLine(to:CGPoint(x: 200, y: 120))
         missle.addLine(to:CGPoint(x: 150, y: 130))
