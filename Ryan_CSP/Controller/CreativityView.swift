@@ -8,7 +8,7 @@
 
 import UIKit
 
-public class CreativityView: UICollectionViewController : UICollectionViewDelegateFlowLayout
+public class CreativityView: UICollectionViewController, UICollectionViewDelegateFlowLayout
 {
     private let reuseIdentifier = "artIdentifier"
     private let sectionInsets = UIEdgeInsets(top: 50.0, left: 20.0, bottom: 50.0, right: 20.0)
@@ -38,11 +38,13 @@ public class CreativityView: UICollectionViewController : UICollectionViewDelega
                 indexPaths.append(oldValue)
             }
             
-            collectionView?.performVBatchUpdates(
+            collectionView?.performBatchUpdates(
                 {
                     self.collectionView?.reloadItems(at: indexPaths)
                     
-            }
+            })
+            {
+                
             completed in
             
             if let largePhotoIndexPath = self.largephotoIndexPath
@@ -50,7 +52,8 @@ public class CreativityView: UICollectionViewController : UICollectionViewDelega
                     self.collectionView?.scrollToItem(at: largePhotoIndexPath,
                                                       at: .centeredVertically,
                                                       animated: true)
-                
+                }
+            }
         }
     }
     
@@ -58,11 +61,25 @@ public class CreativityView: UICollectionViewController : UICollectionViewDelega
     
     
     
-    override func viewDidLoad() {
+    override public func viewDidLoad()
+    {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
     }
+    
+    override public func numberOfSection(in collectionView: UICollectionView) -> Int
+    {
+        return 1
+    }
+    
+    override public func collectionView(_ collectionView: UICollectionView,
+                                        numberOfItemSection section: Int) -> Int
+    {
+        return artSelection.count
+    }
+    
+    
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
