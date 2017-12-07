@@ -9,6 +9,59 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
+        <!--Creativity View-->
+        <scene sceneID="cZQ-pI-iZk">
+            <objects>
+                <collectionViewController id="sNH-BX-wPs" customClass="CreativityView" customModule="Ryan_CSP" customModuleProvider="target" sceneMemberID="viewController">
+                    <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" id="yEr-5n-LDB">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="PrU-zE-hqS">
+                            <size key="itemSize" width="250" height="300"/>
+                            <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                            <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                            <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                        </collectionViewFlowLayout>
+                        <cells>
+                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="g74-oP-t6o" customClass="ArtCell" customModule="Ryan_CSP" customModuleProvider="target">
+                                <rect key="frame" x="62.5" y="0.0" width="250" height="300"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
+                                    <rect key="frame" x="0.0" y="0.0" width="250" height="300"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="eZV-me-GnV">
+                                            <rect key="frame" x="0.0" y="0.0" width="250" height="250"/>
+                                        </imageView>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IEX-Lo-Dbu">
+                                            <rect key="frame" x="0.0" y="279" width="250" height="21"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                </view>
+                                <constraints>
+                                    <constraint firstItem="IEX-Lo-Dbu" firstAttribute="top" secondItem="eZV-me-GnV" secondAttribute="bottom" id="0C7-zo-Mre"/>
+                                    <constraint firstAttribute="bottom" secondItem="IEX-Lo-Dbu" secondAttribute="bottom" id="9YD-5i-qOX"/>
+                                    <constraint firstItem="IEX-Lo-Dbu" firstAttribute="leading" secondItem="g74-oP-t6o" secondAttribute="leading" id="G9Q-7f-FcJ"/>
+                                    <constraint firstItem="IEX-Lo-Dbu" firstAttribute="top" secondItem="eZV-me-GnV" secondAttribute="bottom" id="NfW-1a-XRG"/>
+                                    <constraint firstItem="IEX-Lo-Dbu" firstAttribute="top" secondItem="eZV-me-GnV" secondAttribute="bottom" id="VA6-WH-bb8"/>
+                                    <constraint firstAttribute="trailing" secondItem="IEX-Lo-Dbu" secondAttribute="trailing" id="x5T-xM-hkK"/>
+                                </constraints>
+                            </collectionViewCell>
+                        </cells>
+                        <connections>
+                            <outlet property="dataSource" destination="sNH-BX-wPs" id="HKb-gX-3QL"/>
+                            <outlet property="delegate" destination="sNH-BX-wPs" id="VK9-KK-NAR"/>
+                        </connections>
+                    </collectionView>
+                </collectionViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="3IJ-Jw-lnE" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1103.2" y="115.59220389805098"/>
+        </scene>
         <!--The Internet View-->
         <scene sceneID="Hxs-iL-Nmv">
             <objects>

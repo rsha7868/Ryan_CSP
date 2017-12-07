@@ -47,7 +47,7 @@ public class CreativityView: UICollectionViewController, UICollectionViewDelegat
                 
             completed in
             
-            if let largePhotoIndexPath = self.largephotoIndexPath
+            if let largePhotoIndexPath = self.largePhotoIndexPath
                 {
                     self.collectionView?.scrollToItem(at: largePhotoIndexPath,
                                                       at: .centeredVertically,
@@ -121,11 +121,11 @@ public class CreativityView: UICollectionViewController, UICollectionViewDelegat
         return sectionInsets
         
     }
-    public collectionView(_ collectionView: UICollectionView,
+    public func collectionView(_ collectionView: UICollectionView,
     layout collectionViewLayout: UICollectionViewLayout,
     minimumLineSpacingForSectionAt section: Int) -> CGFloat
     {
-    return sectionInst.left
+    return sectionInsets.left
     }
     
     override public func collectionView(_ collectionView: UICollectionView,

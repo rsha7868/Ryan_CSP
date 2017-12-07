@@ -22,6 +22,7 @@
 		9A1CBD6E1FCF39C400878A2F /* InternetDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A1CBD6D1FCF39C400878A2F /* InternetDetailViewController.swift */; };
 		9A1CBD711FCF3B9900878A2F /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A1CBD701FCF3B9900878A2F /* WebKit.framework */; };
 		9A91DD671FD72B8300B57F04 /* DrawingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A91DD661FD72B8300B57F04 /* DrawingView.swift */; };
+		9AB86D341FD9D37C00CB933E /* ArtCellCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AB86D331FD9D37C00CB933E /* ArtCellCollectionViewController.swift */; };
 		9AFAC9E31FC35F810080B799 /* StarWars.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AFAC9E21FC35F810080B799 /* StarWars.swift */; };
 		9AFAC9E71FC362170080B799 /* DeathStar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AFAC9E61FC362170080B799 /* DeathStar.swift */; };
 /* End PBXBuildFile section */
@@ -44,6 +45,7 @@
 		9A1CBD6D1FCF39C400878A2F /* InternetDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InternetDetailViewController.swift; sourceTree = "<group>"; };
 		9A1CBD701FCF3B9900878A2F /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
 		9A91DD661FD72B8300B57F04 /* DrawingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrawingView.swift; sourceTree = "<group>"; };
+		9AB86D331FD9D37C00CB933E /* ArtCellCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArtCellCollectionViewController.swift; sourceTree = "<group>"; };
 		9AFAC9E21FC35F810080B799 /* StarWars.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StarWars.swift; sourceTree = "<group>"; };
 		9AFAC9E61FC362170080B799 /* DeathStar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeathStar.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -101,6 +103,7 @@
 				9A117A7D1FA25D8B00178ABB /* InternetMasterViewController.swift */,
 				9A117A7F1FA25DAD00178ABB /* GlobalImpactView.swift */,
 				9A1CBD6D1FCF39C400878A2F /* InternetDetailViewController.swift */,
+				9AB86D331FD9D37C00CB933E /* ArtCellCollectionViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -224,6 +227,7 @@
 				9A117A5C1FA256E100178ABB /* AppDelegate.swift in Sources */,
 				9A117A801FA25DAD00178ABB /* GlobalImpactView.swift in Sources */,
 				9A117A7E1FA25D8B00178ABB /* InternetMasterViewController.swift in Sources */,
+				9AB86D341FD9D37C00CB933E /* ArtCellCollectionViewController.swift in Sources */,
 				9AFAC9E71FC362170080B799 /* DeathStar.swift in Sources */,
 				9A117A781FA25CD400178ABB /* AbrstractionView.swift in Sources */,
 				9A117A7C1FA25D2C00178ABB /* ProgrammingView.swift in Sources */,
