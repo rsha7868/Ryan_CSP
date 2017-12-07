@@ -8,7 +8,7 @@
 
 import UIKit
 
-public class CreativityView: UIViewController
+public class CreativityView: UICollectionViewController : UICollectionViewDelegateFlowLayout
 {
     private let reuseIdentifier = "artIdentifier"
     private let sectionInsets = UIEdgeInsets(top: 50.0, left: 20.0, bottom: 50.0, right: 20.0)
@@ -19,10 +19,40 @@ public class CreativityView: UIViewController
         return [
             UIImage(named: "cute BattleShip"),
                 UIImage(named: "cute DeathStar"),
-            UIImage(named: "cute Deathslayer")
+            UIImage(named: "cute DeathSlayer")
     
     ]
 }()
+    
+    var largePhotoIndexPath: IndexPath?
+    {
+        didSet
+        {
+            var indexPaths = [IndexPath]()
+            if let largePhotoIndexPath = largePhotoIndexPath
+            {
+                indexPaths.append(largePhotoIndexPath)
+            }
+            if let oldValue = oldValue
+            {
+                indexPaths.append(oldValue)
+            }
+            
+            collectionView?.performVBatchUpdates(
+                {
+                    self.collectionView?.reloadItems(at: indexPaths)
+                    
+            }
+            completed in
+            
+            if let largePhotoIndexPath = self.largephotoIndexPath
+                {
+                    self.collectionView?.scrollToItem(at: largePhotoIndexPath,
+                                                      at: .centeredVertically,
+                                                      animated: true)
+                
+        }
+    }
     
     
     
