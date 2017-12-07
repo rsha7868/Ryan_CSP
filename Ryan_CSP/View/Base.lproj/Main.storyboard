@@ -50,6 +50,10 @@
                                     <constraint firstItem="IEX-Lo-Dbu" firstAttribute="top" secondItem="eZV-me-GnV" secondAttribute="bottom" id="VA6-WH-bb8"/>
                                     <constraint firstAttribute="trailing" secondItem="IEX-Lo-Dbu" secondAttribute="trailing" id="x5T-xM-hkK"/>
                                 </constraints>
+                                <connections>
+                                    <outlet property="imageName" destination="IEX-Lo-Dbu" id="lja-6b-vZ2"/>
+                                    <outlet property="imageView" destination="eZV-me-GnV" id="Kml-g8-vqe"/>
+                                </connections>
                             </collectionViewCell>
                         </cells>
                         <connections>
