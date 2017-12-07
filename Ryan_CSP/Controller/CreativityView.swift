@@ -79,22 +79,66 @@ public class CreativityView: UICollectionViewController, UICollectionViewDelegat
         return artSelection.count
     }
     
-    
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    override public func collectionView(_ collectionView: UICollectionView,
+                                        cellForItemAt indexPath: IndexPath) -> UICollectionViewCell
+    {
+        let artCell = collectionView.dequeueReuseableCell(withReuseIdentfier: reuseIdentifier, for: indexPath) as! ArtCell
+        
+        artCell.backgroundColor = .blue
+        artCell.imageView.image = artSelection[indexPath.row]
+        artCell.imageName.text = "My Art"
+        
+        return artCell
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+    public func collectionView(_ collectionView: UICollectionView,
+                               layout collectionViewLayout: UICollectionViewLayout,
+                               sizeForItemAt indexPath: IndexPath) -> CGSize
+    {
+        
+    if indexPath == largePhotoIndexPath
+    {
+      let art = artSection[indexpath.row]
+        let size = collectionView.bounds.size
+        let widthScale = (size.width / art!.size.width) * CGFloat(0.80)
+        let largeSize = CGSize(width: art!.size.width * widthscale, height: art!size.height * widthScale)
+        
+        return largeSize
+        
+        }
+        let paddingSpace = sectionInsets.left * (itemsPerRow + 1)
+        let availableWidth = view.frame.width - paddingSpace
+        let widthperItem = availableWidth / itemsPerRow
+        
+        return CGSize(width: widthPerItem, height: widthPerItem)
+    
+        
+}
+    override func collectionView(_ collectionView: UICollectionView,
+                                 layout collectionViewLayout: UICollectionViewLayout,
+                                 insetForSectionAt section: Int) -> CGFloat
+    {
+        return sectionInsets
+        
     }
-    */
-
+    public collectionView(_ collectionView: UICollectionView,
+    layout collectionViewLayout: UICollectionViewLayout,
+    minimumLineSpacingForSectionAt section: Int) -> CGFloat
+    {
+    return sectionInst.left
+    }
+    
+    override public func collectionView(_ collectionView: UICollectionView,
+                                        shouldSelectItemAt indexPath: IndexPath) -> Bool
+    {
+        if largePhotoIndexPath == indexPath
+        {
+            largePhotoIndexPath = nil
+        }
+        else
+        {
+            largePhotoIndexPath = indexPath
+        }
+        return false
+    }
 }
