@@ -9,14 +9,16 @@
 import UIKit
 public class DeathStar : StarWars
 {
-    public var starState: Bool
+    public var LaserState: Bool
     
-    public func star() {
+    public func star()
+    {
         self.laserState: true
     }
     
-    public func isStarWars() -> Bool {
-        <#code#>
+    public func isStarWars() -> Bool
+    {
+        laserState = true
     }
     
     private var starColor : UIColor
@@ -25,6 +27,6 @@ public class DeathStar : StarWars
     
     public init()
     {
-        self.starState
+        laserState = true
     }
 }

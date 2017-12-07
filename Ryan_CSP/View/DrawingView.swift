@@ -15,8 +15,8 @@ public class DrawingView: UIView
     override public func draw(_ rect: CGRect)
     {
     drawStickFigure().Stroke()
-    drawTurtle().Stroke()
-    drawMissle().Stroke()
+    drawTurtle()
+    drawMissle()
     }
 
     private func drawStickFigure() -> UIBezierPath
@@ -66,7 +66,7 @@ public class DrawingView: UIView
         missle.addLine(to:CGPoint(x: 140, y: 160))
         missle.addLine(to:CGPoint(x: 130, y: 150))
         missle.addLine(to:CGPoint(x: 120, y: 200))
-        missle.close
+        missle.close()
         missle.fill()
     }
 }

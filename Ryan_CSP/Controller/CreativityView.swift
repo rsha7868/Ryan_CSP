@@ -8,8 +8,26 @@
 
 import UIKit
 
-class CreativityView: UIViewController {
-
+public class CreativityView: UIViewController
+{
+    private let reuseIdentifier = "artIdentifier"
+    private let sectionInsets = UIEdgeInsets(top: 50.0, left: 20.0, bottom: 50.0, right: 20.0)
+    private let itemsPerRows: CGFloat = 3
+    
+    private lazy var artSection : [UIImage?] =
+    {
+        return [
+            UIImage(named: "cute BattleShip"),
+                UIImage(named: "cute DeathStar"),
+            UIImage(named: "cute Deathslayer")
+    
+    ]
+}()
+    
+    
+    
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
