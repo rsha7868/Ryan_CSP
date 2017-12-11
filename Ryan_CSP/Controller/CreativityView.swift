@@ -74,18 +74,18 @@ public class CreativityView: UICollectionViewController, UICollectionViewDelegat
     }
     
     override public func collectionView(_ collectionView: UICollectionView,
-                                        numberOfItemInSection section: Int) -> Int
+                                        numberOfItemsInSection section: Int) -> Int
     {
-        return artSelection.count
+        return artSection.count
     }
     
     override public func collectionView(_ collectionView: UICollectionView,
                                         cellForItemAt indexPath: IndexPath) -> UICollectionViewCell
     {
-        let artCell = collectionView.dequeueReuseableCell(withReuseIdentfier: reuseIdentifier, for: indexPath) as! ArtCell
+        let artCell = collectionView.dequeueReusableCell(withReuseIdentifier: reuseIdentifier, for: indexPath) as! ArtCell
         
         artCell.backgroundColor = .blue
-        artCell.imageView.image = artSelection[indexPath.row]
+        artCell.imageView.image = artSection[indexPath.row]
         artCell.imageName.text = "My Art"
         
         return artCell
@@ -106,17 +106,17 @@ public class CreativityView: UICollectionViewController, UICollectionViewDelegat
         return largeSize
         
         }
-        let paddingSpace = sectionInsets.left * (itemsPerRow + 1)
+        let paddingSpace = sectionInsets.left * (itemsPerRows + 1)
         let availableWidth = view.frame.width - paddingSpace
-        let widthperItem = availableWidth / itemsPerRow
+        let widthperItem = availableWidth / itemsPerRows
         
-        return CGSize(width: widthPerItem, height: widthPerItem)
+        return CGSize(width: widthperItem, height: widthperItem)
     
         
 }
-    override func collectionView(_ collectionView: UICollectionView,
+    public func collectionView(_ collectionView: UICollectionView,
                                  layout collectionViewLayout: UICollectionViewLayout,
-                                 insetForSectionAt section: Int) -> CGFloat
+                                 insetForSectionAt section: Int) -> UIEdgeInsets
     {
         return sectionInsets
         

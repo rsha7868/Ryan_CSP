@@ -70,7 +70,7 @@ class InternetMasterViewController : UITableViewController
                 controller.detailAddress = urlString
                 controller.detailText = pageText
                 controller.navigationItem.leftBarButtonItem = splitViewController?.displayModeButtonItem
-                controller.navigationItem.leftItemSupplementBackButton = true
+                controller.navigationItem.leftItemsSupplementBackButton = true
             }
         }
     }

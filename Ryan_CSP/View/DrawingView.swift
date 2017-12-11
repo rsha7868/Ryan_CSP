@@ -40,7 +40,7 @@ public class DrawingView: UIView
     stickFigure.move(to: CGPoint(x: 200, y: 270))
     stickFigure.addLine(to: CGPoint(x: 200, y: 300))
                        
-    
+    return stickFigure
     }
     
     private func drawTurtle() -> UIBezierPath
@@ -52,6 +52,8 @@ public class DrawingView: UIView
         logo.addLine(to: CGPoint(x: 50, y: 300))
         logo.close()
         logo.fill()
+        
+        return logo
     }
     private func drawMissle() -> UIBezierPath
     {
@@ -68,6 +70,8 @@ public class DrawingView: UIView
         missle.addLine(to:CGPoint(x: 120, y: 200))
         missle.close()
         missle.fill()
+        
+        return missle
     }
 }
 

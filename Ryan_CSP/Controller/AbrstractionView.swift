@@ -17,13 +17,13 @@ public class AbrstractionView: UIPageViewController, UIPageViewControllerDataSou
             self.newAbstractionView(abstractionLevel: "Java"),
             self.newAbstractionView(abstractionLevel: "ByteCode"),
             self.newAbstractionView(abstractionLevel: "Binary"),
-            self.newAbstractionView(abstractionLevel: "AndGate"),
+            self.newAbstractionView(abstractionLevel: "AndGate")
         ]
     }()
     
     private func newAbstractionView(abstractionLevel : String) -> UIViewController
     {
-        return UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier"\(abstractionLevel)ViewController")
+        return UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier:"\(abstractionLevel)ViewController")
     }
 
     public override func viewDidLoad()
@@ -92,7 +92,7 @@ public class AbrstractionView: UIPageViewController, UIPageViewControllerDataSou
     
     public func  presentationIndex(for pageViewController: UIPageViewController) -> Int
     {
-        guard let firstViewController = ViewControllers?.first, let firstViewContollerIndex = orderedAbstractionViews.index(of: firstViewController)
+        guard let firstViewController = viewControllers?.first, let firstViewControllerIndex = orderedAbstractionViews.index(of: firstViewController)
         else
         {
             return 0

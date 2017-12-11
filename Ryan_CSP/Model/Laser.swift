@@ -9,6 +9,8 @@
 import UIKit
 public class Laser: Destroyable
 {
+    
+    
     public var destroyState: Bool
     
     public init()
@@ -16,7 +18,7 @@ public class Laser: Destroyable
         self.destroyState = true
     }
     
-    public func Destroy() -> Bool
+    public func destroy()
     {
         print("I was destroyed")
         destroyState = true
