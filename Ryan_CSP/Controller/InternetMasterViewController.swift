@@ -23,7 +23,7 @@ class InternetMasterViewController : UITableViewController
     
     private lazy var addresses : [String] = []
     
-    private var detailViewController : internetDetailViewController?
+    private var detailViewController : InternetDetailViewController?
     
     private func setup() -> Void
     {
@@ -36,8 +36,8 @@ class InternetMasterViewController : UITableViewController
         ]
     if let spiltView = splitViewController
         {
-            let currentController = splitView.viewControllers
-            detailViewController = currentController[0] as? internetDetailViewController
+            let currentController = spiltView.viewControllers
+            detailViewController = currentController[0] as? InternetDetailViewController
         }
     }
     override func viewDidLoad()
@@ -48,43 +48,50 @@ class InternetMasterViewController : UITableViewController
         // Do any additional setup after loading the view.
     }
     
-    override public func prepare(for seque:UIStoryboardSeque, sender: any?)
+    override public func prepare(for segue: UIStoryboardSegue, sender: Any?)
     {
-        if segue.indentifier! == "showDetail"
+        if segue.identifier! == "showDetail"
         {
-            if let indexPath = self.tabView.indexPathForSelectedRow
+            if let indexPath = self.tableView.indexPathForSelectedRow
             {
-                let urlString = adresses[indexPath.row]
+                let urlString = addresses[indexPath.row]
                 let pageText : String
-                
+
                 if indexPath.row == 0
                 {
                     pageText = "All the definitions you wrote..........."
                 }
                 else
                 {
-                    pageText = internetTopics[indextPath.row]
+                    pageText = internetTopics[indexPath.row]
                 }
                 let controller = segue.destination as! InternetDetailViewController
-                
-                controller.detailAdress = urlString
+
+                controller.detailAddress = urlString
                 controller.detailText = pageText
-                cotrolller.navigationItem = splitViewController?.displayModeButtonItem
-                controller.navigationItem = leftItemSupplementBackButton = true
+                controller.navigationItem.leftBarButtonItem = splitViewController?.displayModeButtonItem
+                controller.navigationItem.leftItemSupplementBackButton = true
             }
         }
     }
     
 
-    override public func numberOfSecctions(in tableView: UITableView) -> Int
+    override public func numberOfSections(in tableView: UITableView) -> Int
     {
         return 1
     }
     override public func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int
     {
-        return inernetTopics.count
+        return internetTopics.count
     }
-    override public func tableView(_ tableView: UITableView, cellFor)
+    override public func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell
+    {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "reuseIdentifier", for: indexPath)
+        let currentTextLabel = internetTopics[indexPath.row]
+        cell.textLabel!.text = currentTextLabel
+        
+        return cell
+    }
     
 
     /*

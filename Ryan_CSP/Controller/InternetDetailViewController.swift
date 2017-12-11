@@ -9,7 +9,7 @@
 import WebKit
 import UIKit
 
-public class internetDetailViewController : UIViewController
+public class InternetDetailViewController : UIViewController
 {
     @IBOutlet weak var textView: UILabel!
     @IBOutlet weak var webViewer: WKWebView!

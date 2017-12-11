@@ -236,7 +236,7 @@
         <!--Internet Detail View Controller-->
         <scene sceneID="Qo3-rA-vWG">
             <objects>
-                <viewController id="tfn-Q6-caX" customClass="internetDetailViewController" customModule="Ryan_CSP" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="tfn-Q6-caX" customClass="InternetDetailViewController" customModule="Ryan_CSP" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="NtI-q3-vGJ">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -262,8 +262,8 @@
                         <viewLayoutGuide key="safeArea" id="b23-U7-PNi"/>
                     </view>
                     <connections>
-                        <outlet property="textView" destination="390-r8-vXz" id="8dO-Bh-8j0"/>
-                        <outlet property="webViewer" destination="9T6-Co-kIg" id="2CD-fe-5rq"/>
+                        <outlet property="textView" destination="390-r8-vXz" id="RHf-1j-obR"/>
+                        <outlet property="webViewer" destination="9T6-Co-kIg" id="6Aa-im-F93"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7Mn-oR-0Jv" userLabel="First Responder" sceneMemberID="firstResponder"/>
