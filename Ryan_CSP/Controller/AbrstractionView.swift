@@ -8,9 +8,9 @@
 
 import UIKit
 
-public class AbrstractionView: UIViewController, UIPageViewControllerDataSource
+public class AbrstractionView: UIPageViewController, UIPageViewControllerDataSource
 {
-    private (set) lazy var orderedAbstractionViews : [UIViewController]
+    private (set) lazy var orderedAbstractionViews : [UIViewController] =
     {
         return [
             self.newAbstractionView(abstractionLevel: "Block"),

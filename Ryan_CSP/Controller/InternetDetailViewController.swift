@@ -38,7 +38,7 @@ public class internetDetailViewController : UIViewController
             {
                 let currentURL = URL(string: detailAdress!)
                 
-                let currentWebView = URLRequest(url: currentURL!)
+                let currentWebRequest = URLRequest(url: currentURL!)
                 currentWebView.load(currentWebRequest)
             }
         }

@@ -23,7 +23,7 @@ class InternetMasterViewController : UITableViewController
     
     private lazy var addresses : [String] = []
     
-    private var detailViewController : InternetDetailViewController?
+    private var detailViewController : internetDetailViewController?
     
     private func setup() -> Void
     {

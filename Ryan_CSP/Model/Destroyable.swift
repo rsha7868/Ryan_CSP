@@ -7,9 +7,9 @@
 //
 
 import Foundation
-public protocol StarWars
+public protocol Destroyable
 {
-    var starState : Bool {get set}
-    func star() -> Void
-    func isStarWars() -> Bool
+    var destroyState : Bool {get set}
+    func destroy() -> Void
+    func wasDestroyed() -> Bool
 }

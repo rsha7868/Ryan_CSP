@@ -97,7 +97,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="g5B-Ne-VS2" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="93.599999999999994" y="808.24587706146929"/>
+            <point key="canvasLocation" x="-359" y="886"/>
         </scene>
         <!--Abrstraction View-->
         <scene sceneID="Ino-Gx-FTB">
@@ -428,11 +428,17 @@
                                 <rect key="frame" x="156" y="529" width="46" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
+                                <connections>
+                                    <segue destination="pdW-4d-T8A" kind="show" id="YCl-A5-vOD"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vxR-3o-gLp">
                                 <rect key="frame" x="164" y="428" width="46" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
+                                <connections>
+                                    <segue destination="TYW-mW-xCq" kind="showDetail" id="wYn-yH-64c"/>
+                                </connections>
                             </button>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="hQ5-89-zXS" customClass="DrawingView" customModule="Ryan_CSP" customModuleProvider="target" colorLabel="IBBuiltInLabel-Blue">
                                 <rect key="frame" x="40" y="204" width="278" height="184"/>
@@ -447,7 +453,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="432.80000000000001" y="115.59220389805098"/>
+            <point key="canvasLocation" x="446" y="116"/>
         </scene>
         <!--Algorithoms View-->
         <scene sceneID="IAg-Uf-mHJ">
@@ -492,7 +498,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bW5-Au-rGI" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1256.8" y="116.49175412293854"/>
+            <point key="canvasLocation" x="1260" y="116"/>
         </scene>
         <!--Global Impact View-->
         <scene sceneID="rVb-53-cJ4">

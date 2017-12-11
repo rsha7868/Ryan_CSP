@@ -46,7 +46,7 @@ public class DrawingView: UIView
     private func drawTurtle() -> UIBezierPath
     {
         let logo = UIBezierPath()
-        UIColor.blue.setfill()
+        UIColor.blue.setStroke()
         logo.move(to: CGPoint(x: 50, y: 250))
         logo.addLine(to: CGPoint(x: 100, y: 300))
         logo.addLine(to: CGPoint(x: 50, y: 300))
@@ -56,7 +56,7 @@ public class DrawingView: UIView
     private func drawMissle() -> UIBezierPath
     {
         let missle = UIBezierPath()
-        UIColor.darkGrey.setStroke()
+        UIColor.blue.setStroke()
         missle.move(to:CGPoint(x: 100, y: 60))
         missle.addLine(to:CGPoint(x: 200, y: 120))
         missle.addLine(to:CGPoint(x: 150, y: 130))
