@@ -19,7 +19,7 @@ public class CreativityView: UICollectionViewController, UICollectionViewDelegat
         return [
             UIImage(named: "cute BattleShip"),
                 UIImage(named: "cute DeathStar"),
-            UIImage(named: "cute DeathSlayer")
+                UIImage(named: "cute Transformers-Dark of the Moon")
     
     ]
 }()
