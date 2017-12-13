@@ -31,7 +31,7 @@ public class StartScene : SKScene
         let touchLocation = currentTouch?.location(in: self)
         let touchedNode = self.atPoint(touchLocation!)
         
-        if(touchedNode.name == "Start")
+        if(touchedNode.name == "start")
         {
             let gameOverScene = GameScene(size: size)
             gameOverScene.scaleMode = scaleMode
