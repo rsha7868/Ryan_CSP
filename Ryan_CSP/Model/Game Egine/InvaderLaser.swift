@@ -15,6 +15,7 @@ public class InvaderBullet: Projectile
     {
         super.init(imageName: imageName, bulletSound: bulletSound)
         
+        self.physicsBody = SK
     }
     
     required public init?(coder aDecoder: NSCoder)
