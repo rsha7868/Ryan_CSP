@@ -40,6 +40,7 @@
 		9AB371A11FE1B01A0098A260 /* File.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AB3719A1FE1B0190098A260 /* File.swift */; };
 		9AB371A21FE1B01A0098A260 /* Projectile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AB3719B1FE1B01A0098A260 /* Projectile.swift */; };
 		9AB86D341FD9D37C00CB933E /* ArtCellCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AB86D331FD9D37C00CB933E /* ArtCellCollectionViewController.swift */; };
+		9AD459E61FFD620800E7AFE4 /* DeathScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AD459E51FFD620800E7AFE4 /* DeathScene.swift */; };
 		9AFAC9E31FC35F810080B799 /* Destroyable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AFAC9E21FC35F810080B799 /* Destroyable.swift */; };
 		9AFAC9E71FC362170080B799 /* Laser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AFAC9E61FC362170080B799 /* Laser.swift */; };
 /* End PBXBuildFile section */
@@ -80,6 +81,7 @@
 		9AB3719A1FE1B0190098A260 /* File.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = File.swift; sourceTree = "<group>"; };
 		9AB3719B1FE1B01A0098A260 /* Projectile.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Projectile.swift; sourceTree = "<group>"; };
 		9AB86D331FD9D37C00CB933E /* ArtCellCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArtCellCollectionViewController.swift; sourceTree = "<group>"; };
+		9AD459E51FFD620800E7AFE4 /* DeathScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeathScene.swift; sourceTree = "<group>"; };
 		9AFAC9E21FC35F810080B799 /* Destroyable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Destroyable.swift; sourceTree = "<group>"; };
 		9AFAC9E61FC362170080B799 /* Laser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Laser.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -190,6 +192,7 @@
 				9AB371811FE1AB340098A260 /* LevelCompleteScene.swift */,
 				9AB371801FE1AB330098A260 /* StartScene.swift */,
 				9AB3717E1FE1AB2A0098A260 /* GameScene.swift */,
+				9AD459E51FFD620800E7AFE4 /* DeathScene.swift */,
 			);
 			path = "Game Controller";
 			sourceTree = "<group>";
@@ -305,6 +308,7 @@
 				9AB371831FE1AB350098A260 /* LevelCompleteScene.swift in Sources */,
 				9AB371A21FE1B01A0098A260 /* Projectile.swift in Sources */,
 				9A117A5E1FA256E100178ABB /* ViewController.swift in Sources */,
+				9AD459E61FFD620800E7AFE4 /* DeathScene.swift in Sources */,
 				9A117A761FA25CAC00178ABB /* DataInformationView.swift in Sources */,
 				9AB3719C1FE1B01A0098A260 /* Invader.swift in Sources */,
 				9AB3719E1FE1B01A0098A260 /* X-Wing.swift in Sources */,
