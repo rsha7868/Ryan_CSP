@@ -24,17 +24,19 @@ public class DeathScene: SKScene
         addChild(gameOver)
     }
     
-    override public func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent: UIEvent?) -> Void
-    {
-        let touch = touches.first
-        let TouchLocation = touch?.location(in: self)
-        let touchedNode = self.atPoint(touchLocation!)
-        if(touchedNode.name == "game over")
-        {
-            let newGameScene = GameScene(size: size)
-            newGameScene.scaleMode = scaleMode
-            let transitionType = SKTransition.flipHorizontal(withDuration: 0.5)
-            view?.presentScene(newGameScene,transition: transitionType)
+    
+    override public func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) -> Void
+       {
+               let touch = touches.first
+              let touchLocation = touch?.location(in: self)
+              let touchedNode = self.atPoint(touchLocation!)
+               if(touchedNode.name == "game over")
+               {
+               let newGameScene = GameScene(size: size)
+                newGameScene.scaleMode = scaleMode
+               let transitionType = SKTransition.flipHorizontal(withDuration: 0.5)
+               view?.presentScene(newGameScene,transition: transitionType)
+
         }
     }
 }

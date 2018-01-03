@@ -97,12 +97,26 @@ public class GameScene: SKScene, SKPhysicsContactDelegate
     
     private func invokeInvaderFire() -> Void
     {
-        
+        let fireBullet = SKAction.run()
+        {
+            self.fireInvaderBullet()
+        }
+        let waitToFireInvaderBullet = SKAction.wait(forDuration: 2.5)
+        let invaderFire = SKAction.sequence([fireBullet.waitToFireInvaderBullet])
+        let repeatForeverAction = SKAction.repeatForever(invaderFire)
+        run(repeatForeverAction)
     }
-    
     func fireInvaderBullet() -> Void
     {
-       
+       if(invadersThatCanFire.isEmpty)
+       {
+            gameLevel += 1
+            levelcomplete()
+        }
+        if let randomInvader = invadersThatCanFire.randomElement()
+        {
+            randomInvader.fireBullet(scene: self)
+        }
     }
     
     func newGame() -> Void
@@ -146,7 +160,7 @@ public class GameScene: SKScene, SKPhysicsContactDelegate
     
     override public func didSimulatePhysics()
     {
-        
+        player.physicsBody?.velocity = CGVector( accelerationX * 500, dy: 0)
     }
 
     //MARK:- Handle Motion
@@ -196,8 +210,8 @@ public class GameScene: SKScene, SKPhysicsContactDelegate
         {
             print("Invader and Player Collision Contact")
         }
-        if((firstBody.categorBitMask & CollisionCategories.Player != 0) &&
-            (secondBody.categoryBitMask & CollisionCategories.InvaderLaser != 0))
+        if((firstBody.categoryBitMask & CollisionCategories.Player != 0) &&
+            (secondBody.categoryBitMask & CollisionCategories.InvaderBullet != 0))
         {
             player.die()
         }
@@ -207,7 +221,7 @@ public class GameScene: SKScene, SKPhysicsContactDelegate
             player.kill()
         }
         if((firstBody.categoryBitMask & CollisionCategories.Invader != 0) &&
-            (secondBody.categoryBitMask & CollisionCategories.PlayerLaser != 0))
+            (secondBody.categoryBitMask & CollisionCategories.PlayerBullet != 0))
         {
             if(contact.bodyA.node?.parent == nil || contact.bodyB.node?.parent == nil)
             {
