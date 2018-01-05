@@ -41,7 +41,7 @@ public class Player: SKSpriteNode
         self.physicsBody?.categoryBitMask = CollisionCategories.Player
         self.physicsBody?.contactTestBitMask = CollisionCategories.InvaderBullet | CollisionCategories.Invader
         self.physicsBody?.collisionBitMask = CollisionCategories.EdgeBody
-        self.physicsBody?.allowsRotation = false
+        self.physicsBody?.allowRotation = false
         
         animate()
     }
