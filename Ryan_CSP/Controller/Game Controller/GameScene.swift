@@ -102,7 +102,7 @@ public class GameScene: SKScene, SKPhysicsContactDelegate
             self.fireInvaderBullet()
         }
         let waitToFireInvaderBullet = SKAction.wait(forDuration: 2.5)
-        let invaderFire = SKAction.sequence([fireBullet.waitToFireInvaderbullet])
+        let invaderFire = SKAction.sequence([fireBullet,waitToFireInvaderBullet])
         let repeatForeverAction = SKAction.repeatForever(invaderFire)
         run(repeatForeverAction)
     }
@@ -164,7 +164,7 @@ public class GameScene: SKScene, SKPhysicsContactDelegate
     
     override public func update(_ currentTime: CFTimeInterval) -> Void
     {
-        moveInvader()
+        moveInvaders()
     }
     
     override public func didSimulatePhysics()
@@ -246,8 +246,20 @@ public class GameScene: SKScene, SKPhysicsContactDelegate
                     node, stop in
                     let invader = node as! Invader
                     if invader.invaderRow == newInvaderRow && invader.invaderCol == newInvaderCol
+                    {
+                        self.invadersThatCanFire.append(invader)
+                        stop.pointee = true
+                    }
                 }
             }
+            let invaderIndex = invadersThatCanFire.index(of: firstBody.node as! Invader)
+            if(invaderIndex != nil)
+            {
+                invaderThatCanFire.remove(at: invaderIndex!)
+            }
+            theInvader.removeFromParent()
+            secondBody.node?.removeFromParent()
+            
         }
     
         
