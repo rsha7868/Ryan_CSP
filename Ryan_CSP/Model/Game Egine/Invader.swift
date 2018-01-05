@@ -24,8 +24,8 @@ public class Invader: SKSpriteNode
         
         self.physicsBody = SKPhysicsBody(texture: self.texture!, size: self.size)
         self.physicsBody?.isDynamic = true
-        self.pyssicsBody?.usesPreciseCollisionCategories.Invader
-        self.physicsBody?.contactTestBitMask = CollisionCategories.PlayerBullet | CollisionCategpries.Player
+        self.physicsBody?.usesPreciseCollisionDetection = false
+        self.physicsBody?.contactTestBitMask = CollisionCategories.PlayerBullet | CollisionCategories.Player
         self.physicsBody?.collisionBitMask = CollisionCategories.EdgeBody
         
     
@@ -39,6 +39,9 @@ public class Invader: SKSpriteNode
     //MARK: - Invader methods section
     public func fireBullet(scene: SKScene) -> Void
     {
-
+        let bullet = InvaderBullet(imageName: "Laser", bulletSound: nil)
+        bullet.position.x = self.position.x
+        bullet.position.x = self.position.y - self,size.height/2
+        scene.addChild(bullet)
     }
 }

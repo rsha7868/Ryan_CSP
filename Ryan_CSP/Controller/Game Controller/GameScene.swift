@@ -102,7 +102,7 @@ public class GameScene: SKScene, SKPhysicsContactDelegate
             self.fireInvaderBullet()
         }
         let waitToFireInvaderBullet = SKAction.wait(forDuration: 2.5)
-        let invaderFire = SKAction.sequence([fireBullet.waitToFireInvaderBullet])
+        let invaderFire = SKAction.sequence([fireBullet.waitToFireInvaderbullet])
         let repeatForeverAction = SKAction.repeatForever(invaderFire)
         run(repeatForeverAction)
     }
@@ -111,7 +111,7 @@ public class GameScene: SKScene, SKPhysicsContactDelegate
        if(invadersThatCanFire.isEmpty)
        {
             gameLevel += 1
-            levelcomplete()
+            levelComplete()
         }
         if let randomInvader = invadersThatCanFire.randomElement()
         {
@@ -121,12 +121,21 @@ public class GameScene: SKScene, SKPhysicsContactDelegate
     
     func newGame() -> Void
     {
-        
+        let newGameScene = StartScene(size: size)
+        newGameScene.scaleMode = scaleMode
+        let transitionType = SKTransition.flipHorizontal(withDuration: 0.5)
+        view?.presentScene(newGameScene,transition: transitionType)
     }
     
     func levelComplete() -> Void
     {
-        
+        if(gameLevel <= maxLevels)
+        {
+            let levelCompleteScene = LevelCompleteScene(size: size)
+            levelCompleteScene.scaleMode = scaleMode
+            let transitionType = SKTransition.flipHorizontal(withDuration: 0.5)
+            view?.presentScene(levelCompleteScene,transition: transitionType)
+        }
     }
     
     
