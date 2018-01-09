@@ -13,7 +13,7 @@
 		9A117A631FA256E100178ABB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9A117A621FA256E100178ABB /* Assets.xcassets */; };
 		9A117A661FA256E100178ABB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9A117A641FA256E100178ABB /* LaunchScreen.storyboard */; };
 		9A117A721FA25C3600178ABB /* CreativityView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A117A711FA25C3600178ABB /* CreativityView.swift */; };
-		9A117A761FA25CAC00178ABB /* DataInformationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A117A751FA25CAB00178ABB /* DataInformationView.swift */; };
+		9A117A761FA25CAC00178ABB /* DataViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A117A751FA25CAB00178ABB /* DataViewController.swift */; };
 		9A117A781FA25CD400178ABB /* AbrstractionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A117A771FA25CD400178ABB /* AbrstractionView.swift */; };
 		9A117A7A1FA25D0200178ABB /* AlgorithomsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A117A791FA25D0200178ABB /* AlgorithomsView.swift */; };
 		9A117A7C1FA25D2C00178ABB /* ProgrammingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A117A7B1FA25D2C00178ABB /* ProgrammingView.swift */; };
@@ -21,6 +21,8 @@
 		9A117A801FA25DAD00178ABB /* GlobalImpactView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A117A7F1FA25DAD00178ABB /* GlobalImpactView.swift */; };
 		9A1CBD6E1FCF39C400878A2F /* InternetDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A1CBD6D1FCF39C400878A2F /* InternetDetailViewController.swift */; };
 		9A1CBD711FCF3B9900878A2F /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A1CBD701FCF3B9900878A2F /* WebKit.framework */; };
+		9A22C8222005438500FD1EC4 /* BucketItemCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A22C8212005438500FD1EC4 /* BucketItemCell.swift */; };
+		9A22C824200543C200FD1EC4 /* BucketItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A22C823200543C200FD1EC4 /* BucketItem.swift */; };
 		9A91DD671FD72B8300B57F04 /* DrawingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A91DD661FD72B8300B57F04 /* DrawingView.swift */; };
 		9AB3717F1FE1AB2B0098A260 /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AB3717E1FE1AB2A0098A260 /* GameScene.swift */; };
 		9AB371821FE1AB350098A260 /* StartScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AB371801FE1AB330098A260 /* StartScene.swift */; };
@@ -54,7 +56,7 @@
 		9A117A651FA256E100178ABB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9A117A671FA256E100178ABB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9A117A711FA25C3600178ABB /* CreativityView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreativityView.swift; sourceTree = "<group>"; };
-		9A117A751FA25CAB00178ABB /* DataInformationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataInformationView.swift; sourceTree = "<group>"; };
+		9A117A751FA25CAB00178ABB /* DataViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataViewController.swift; sourceTree = "<group>"; };
 		9A117A771FA25CD400178ABB /* AbrstractionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AbrstractionView.swift; sourceTree = "<group>"; };
 		9A117A791FA25D0200178ABB /* AlgorithomsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlgorithomsView.swift; sourceTree = "<group>"; };
 		9A117A7B1FA25D2C00178ABB /* ProgrammingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgrammingView.swift; sourceTree = "<group>"; };
@@ -62,6 +64,8 @@
 		9A117A7F1FA25DAD00178ABB /* GlobalImpactView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlobalImpactView.swift; sourceTree = "<group>"; };
 		9A1CBD6D1FCF39C400878A2F /* InternetDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InternetDetailViewController.swift; sourceTree = "<group>"; };
 		9A1CBD701FCF3B9900878A2F /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
+		9A22C8212005438500FD1EC4 /* BucketItemCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BucketItemCell.swift; sourceTree = "<group>"; };
+		9A22C823200543C200FD1EC4 /* BucketItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BucketItem.swift; sourceTree = "<group>"; };
 		9A91DD661FD72B8300B57F04 /* DrawingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrawingView.swift; sourceTree = "<group>"; };
 		9AB3717E1FE1AB2A0098A260 /* GameScene.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameScene.swift; sourceTree = "<group>"; };
 		9AB371801FE1AB330098A260 /* StartScene.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StartScene.swift; sourceTree = "<group>"; };
@@ -131,9 +135,10 @@
 			children = (
 				9AB371851FE1ACB00098A260 /* Game Controller */,
 				9A117A5B1FA256E100178ABB /* AppDelegate.swift */,
+				9A22C8212005438500FD1EC4 /* BucketItemCell.swift */,
 				9A117A5D1FA256E100178ABB /* ViewController.swift */,
 				9A117A711FA25C3600178ABB /* CreativityView.swift */,
-				9A117A751FA25CAB00178ABB /* DataInformationView.swift */,
+				9A117A751FA25CAB00178ABB /* DataViewController.swift */,
 				9A117A771FA25CD400178ABB /* AbrstractionView.swift */,
 				9A117A791FA25D0200178ABB /* AlgorithomsView.swift */,
 				9A117A7B1FA25D2C00178ABB /* ProgrammingView.swift */,
@@ -171,6 +176,7 @@
 			isa = PBXGroup;
 			children = (
 				9AB3719A1FE1B0190098A260 /* File.swift */,
+				9A22C823200543C200FD1EC4 /* BucketItem.swift */,
 				9AB371A31FE1B02B0098A260 /* Game Egine */,
 				9AFAC9E21FC35F810080B799 /* Destroyable.swift */,
 				9AFAC9E61FC362170080B799 /* Laser.swift */,
@@ -309,13 +315,15 @@
 				9AB371A21FE1B01A0098A260 /* Projectile.swift in Sources */,
 				9A117A5E1FA256E100178ABB /* ViewController.swift in Sources */,
 				9AD459E61FFD620800E7AFE4 /* DeathScene.swift in Sources */,
-				9A117A761FA25CAC00178ABB /* DataInformationView.swift in Sources */,
+				9A117A761FA25CAC00178ABB /* DataViewController.swift in Sources */,
 				9AB3719C1FE1B01A0098A260 /* Invader.swift in Sources */,
 				9AB3719E1FE1B01A0098A260 /* X-Wing.swift in Sources */,
 				9AB371921FE1AEB00098A260 /* Utilities.swift in Sources */,
 				9A1CBD6E1FCF39C400878A2F /* InternetDetailViewController.swift in Sources */,
 				9AB371A01FE1B01A0098A260 /* PlayerLaser.swift in Sources */,
 				9A91DD671FD72B8300B57F04 /* DrawingView.swift in Sources */,
+				9A22C8222005438500FD1EC4 /* BucketItemCell.swift in Sources */,
+				9A22C824200543C200FD1EC4 /* BucketItem.swift in Sources */,
 				9AB371A11FE1B01A0098A260 /* File.swift in Sources */,
 				9AB371821FE1AB350098A260 /* StartScene.swift in Sources */,
 				9AFAC9E31FC35F810080B799 /* Destroyable.swift in Sources */,

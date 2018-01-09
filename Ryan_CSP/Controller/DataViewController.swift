@@ -8,7 +8,8 @@
 
 import UIKit
 
-class DataInformationView: UIViewController {
+class DataViewController: UITableViewController
+{
 
     override func viewDidLoad() {
         super.viewDidLoad()
