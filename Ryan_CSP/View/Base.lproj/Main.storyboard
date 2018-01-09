@@ -363,6 +363,11 @@
                                         </label>
                                     </subviews>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="bucketItemList" destination="gWC-PZ-4Oz" id="QCm-4I-tkf"/>
+                                    <outlet property="bucketItemSignature" destination="AMi-q8-16G" id="MwG-Qy-SDh"/>
+                                    <outlet property="bucketItemSymbol" destination="Hi8-HO-n5u" id="Hd3-eF-7cO"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
