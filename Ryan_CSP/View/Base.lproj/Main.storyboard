@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="K4N-Cu-tJw">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -40,6 +40,14 @@
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
+                                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ieq-mJ-KY2">
+                                            <rect key="frame" x="87" y="270" width="173" height="30"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <state key="normal" title="Go to Programing Screen"/>
+                                            <connections>
+                                                <segue destination="bTw-7H-BOz" kind="show" id="IjF-kf-2ew"/>
+                                            </connections>
+                                        </button>
                                     </subviews>
                                 </view>
                                 <constraints>
@@ -65,7 +73,7 @@
                 </collectionViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3IJ-Jw-lnE" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-2129" y="170"/>
+            <point key="canvasLocation" x="6162" y="116"/>
         </scene>
         <!--The Internet View-->
         <scene sceneID="Hxs-iL-Nmv">
@@ -76,9 +84,9 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="b30-E4-Wl5">
-                                <rect key="frame" x="135" y="617" width="105" height="30"/>
+                                <rect key="frame" x="101" y="617" width="173" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Change Screen"/>
+                                <state key="normal" title="Go to Abstraction Screen"/>
                                 <connections>
                                     <segue destination="b8i-Mc-UYC" kind="show" id="EAt-mP-aVc"/>
                                 </connections>
@@ -97,7 +105,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="g5B-Ne-VS2" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3830" y="116"/>
+            <point key="canvasLocation" x="4168.8000000000002" y="115.59220389805098"/>
         </scene>
         <!--Abrstraction View-->
         <scene sceneID="Ino-Gx-FTB">
@@ -108,9 +116,12 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="geS-iL-lKL">
-                                <rect key="frame" x="135" y="617" width="105" height="30"/>
+                                <rect key="frame" x="108" y="617" width="159" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Change Screen"/>
+                                <state key="normal" title="Go to Creativity Screen"/>
+                                <connections>
+                                    <segue destination="sNH-BX-wPs" kind="show" id="WaY-cq-TLT"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Abstractions" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Dek-MA-5N1">
                                 <rect key="frame" x="40" y="77" width="97" height="21"/>
@@ -126,7 +137,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="UVh-HP-PUl" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4809" y="116"/>
+            <point key="canvasLocation" x="5148" y="115.59220389805098"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="kBf-gW-mhS">
@@ -378,7 +389,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="nbh-Hc-hQx" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-932" y="888.30584707646187"/>
+            <point key="canvasLocation" x="8289" y="116"/>
         </scene>
         <!--Split View Controller-->
         <scene sceneID="Gv9-ll-Xzg">
@@ -391,7 +402,7 @@
                 </splitViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="63U-SS-bc6" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="260" y="879"/>
+            <point key="canvasLocation" x="-943" y="878"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="WIx-Go-2qa">
@@ -470,13 +481,23 @@
                     <view key="view" contentMode="scaleToFill" id="lf2-em-mdY" customClass="SKView">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qp1-AT-FVa">
+                                <rect key="frame" x="124" y="617" width="126" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Go to Data Screen"/>
+                                <connections>
+                                    <segue destination="bzl-Ig-hYK" kind="showDetail" id="ygL-ro-DB7"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="Ozh-Ei-FuY"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="DtZ-R6-zLr" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="260" y="-790"/>
+            <point key="canvasLocation" x="7263" y="116"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
@@ -486,59 +507,53 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1aD-my-InE">
-                                <rect key="frame" x="127" y="617" width="105" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Change Screen"/>
-                                <connections>
-                                    <segue destination="K4N-Cu-tJw" kind="show" id="sLh-wp-Qb8"/>
-                                </connections>
-                            </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Topic Screen" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Nfz-w1-Scl">
-                                <rect key="frame" x="78" y="132" width="100" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XdA-mA-dcy">
-                                <rect key="frame" x="156" y="529" width="46" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
-                                <connections>
-                                    <segue destination="pdW-4d-T8A" kind="show" id="YCl-A5-vOD"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vxR-3o-gLp">
-                                <rect key="frame" x="164" y="428" width="46" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
-                                <connections>
-                                    <segue destination="TYW-mW-xCq" kind="showDetail" id="wYn-yH-64c"/>
-                                </connections>
-                            </button>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="hQ5-89-zXS" customClass="DrawingView" customModule="Ryan_CSP" customModuleProvider="target" colorLabel="IBBuiltInLabel-Blue">
                                 <rect key="frame" x="40" y="204" width="278" height="184"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.43999009919999998" green="1" blue="0.44982008000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <color key="tintColor" red="0.43999009918292553" green="1" blue="0.44982008000740148" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </view>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ywa-nW-tEP">
-                                <rect key="frame" x="164" y="61" width="46" height="30"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" axis="vertical" alignment="center" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="b12-hW-m6S">
+                                <rect key="frame" x="127" y="409" width="142" height="122.5"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
-                                <connections>
-                                    <segue destination="bTw-7H-BOz" kind="show" id="TuP-Ke-wBk"/>
-                                </connections>
-                            </button>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Go to 7 CSP Ideals" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Nfz-w1-Scl">
+                                        <rect key="frame" x="0.0" y="0.0" width="142" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vxR-3o-gLp">
+                                        <rect key="frame" x="48" y="24.5" width="46" height="30"/>
+                                        <state key="normal" title="Button"/>
+                                        <connections>
+                                            <segue destination="TYW-mW-xCq" kind="showDetail" id="wYn-yH-64c"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XdA-mA-dcy">
+                                        <rect key="frame" x="56" y="58.5" width="30" height="30"/>
+                                        <connections>
+                                            <segue destination="pdW-4d-T8A" kind="show" id="YCl-A5-vOD"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1aD-my-InE">
+                                        <rect key="frame" x="18.5" y="92.5" width="105" height="30"/>
+                                        <state key="normal" title="Change Screen"/>
+                                        <connections>
+                                            <segue destination="K4N-Cu-tJw" kind="show" id="sLh-wp-Qb8"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <navigationItem key="navigationItem" id="Mcu-CA-lzq"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="260" y="116"/>
+            <point key="canvasLocation" x="599" y="116"/>
         </scene>
         <!--Algorithoms View-->
         <scene sceneID="IAg-Uf-mHJ">
@@ -549,9 +564,9 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vpB-fw-YTq">
-                                <rect key="frame" x="135" y="617" width="105" height="30"/>
+                                <rect key="frame" x="93" y="617" width="189" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Change Screen"/>
+                                <state key="normal" title="Go to Global Impact Screen"/>
                                 <connections>
                                     <segue destination="CxY-bu-b7p" kind="show" id="5PN-o1-vrF"/>
                                 </connections>
@@ -583,7 +598,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bW5-Au-rGI" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1326" y="150"/>
+            <point key="canvasLocation" x="1663" y="116"/>
         </scene>
         <!--Global Impact View-->
         <scene sceneID="rVb-53-cJ4">
@@ -630,9 +645,9 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tFM-Hl-ZDs">
-                                <rect key="frame" x="135" y="617" width="105" height="30"/>
+                                <rect key="frame" x="114" y="617" width="147" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Change Screen"/>
+                                <state key="normal" title="Go to Internet Screen"/>
                                 <connections>
                                     <segue destination="npJ-Uu-UsP" kind="show" id="PFs-qQ-Uhb"/>
                                 </connections>
@@ -647,7 +662,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="l2i-Ph-daW" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2650" y="116"/>
+            <point key="canvasLocation" x="2988" y="115.59220389805098"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="9LM-OX-MuA">
@@ -659,13 +674,10 @@
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
-                    <connections>
-                        <segue destination="sNH-BX-wPs" kind="relationship" relationship="rootViewController" id="rrT-AK-h4a"/>
-                    </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="LYO-J5-8iw" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-977" y="170"/>
+            <point key="canvasLocation" x="634" y="878"/>
         </scene>
     </scenes>
     <resources>
@@ -673,6 +685,6 @@
         <image name="javaSample (1)" width="100" height="100"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="Veh-oG-kVg"/>
+        <segue reference="uqI-lg-VFe"/>
     </inferredMetricsTieBreakers>
 </document>
