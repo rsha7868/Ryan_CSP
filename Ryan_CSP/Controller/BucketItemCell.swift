@@ -9,5 +9,7 @@ import UIKit
 
 class BucketItemCell: UITableViewCell
 {
-    
+    @IBOutlet weak var bucketItemList : UILabel !
+    @IBOutlet weak var bucketItemSymbol : UILabel !
+    @IBOutlet weak var bucketItemSignature : UILabel !
 }
