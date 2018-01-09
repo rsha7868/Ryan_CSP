@@ -61,5 +61,28 @@ class BucketItemCell: UITableViewCell
         {
          return loadBucketListFromFile()
         }()
+    private func loadBucketListFromFile() -> [BucketItem]
+    {
+        var items = [BucketItem]()
+        if let filePath = Bundle.main.url(forResource: "bucket", withExtension: "csv")
+        {
+            do
+            {
+                let input = try String(contentsOf: filePath)
+                let bucketLines = input.components(separatedBy: "\n")
+                for line in bucketLines
+                {
+                    let item = line.components(separatedBy: ",")
+                    items.append(BucketItem(Contents: item[0], author: item[1]))
+                }
+            }
+            catch
+            {
+                print("File laod error")
+            }
+        }
+        return items
+    }
+    overirde
     
 }
