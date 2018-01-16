@@ -40,9 +40,8 @@
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
-                                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ieq-mJ-KY2">
-                                            <rect key="frame" x="87" y="270" width="173" height="30"/>
-                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ieq-mJ-KY2">
+                                            <rect key="frame" x="87" y="279" width="173" height="30"/>
                                             <state key="normal" title="Go to Programing Screen"/>
                                             <connections>
                                                 <segue destination="bTw-7H-BOz" kind="show" id="IjF-kf-2ew"/>
@@ -56,6 +55,7 @@
                                     <constraint firstItem="IEX-Lo-Dbu" firstAttribute="leading" secondItem="g74-oP-t6o" secondAttribute="leading" id="G9Q-7f-FcJ"/>
                                     <constraint firstItem="IEX-Lo-Dbu" firstAttribute="top" secondItem="eZV-me-GnV" secondAttribute="bottom" id="NfW-1a-XRG"/>
                                     <constraint firstItem="IEX-Lo-Dbu" firstAttribute="top" secondItem="eZV-me-GnV" secondAttribute="bottom" id="VA6-WH-bb8"/>
+                                    <constraint firstItem="Ieq-mJ-KY2" firstAttribute="top" secondItem="eZV-me-GnV" secondAttribute="bottom" id="tmJ-JZ-hSI"/>
                                     <constraint firstAttribute="trailing" secondItem="IEX-Lo-Dbu" secondAttribute="trailing" id="x5T-xM-hkK"/>
                                 </constraints>
                                 <connections>
@@ -73,7 +73,7 @@
                 </collectionViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3IJ-Jw-lnE" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="6162" y="116"/>
+            <point key="canvasLocation" x="5154" y="116"/>
         </scene>
         <!--The Internet View-->
         <scene sceneID="Hxs-iL-Nmv">
@@ -88,7 +88,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Go to Abstraction Screen"/>
                                 <connections>
-                                    <segue destination="b8i-Mc-UYC" kind="show" id="EAt-mP-aVc"/>
+                                    <segue destination="sNH-BX-wPs" kind="show" id="YpJ-Fk-Bzs"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Internet" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Bqv-sI-hoJ">
@@ -115,14 +115,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="geS-iL-lKL">
-                                <rect key="frame" x="108" y="617" width="159" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Go to Creativity Screen"/>
-                                <connections>
-                                    <segue destination="sNH-BX-wPs" kind="show" id="WaY-cq-TLT"/>
-                                </connections>
-                            </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Abstractions" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Dek-MA-5N1">
                                 <rect key="frame" x="40" y="77" width="97" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -137,7 +129,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="UVh-HP-PUl" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="5148" y="115.59220389805098"/>
+            <point key="canvasLocation" x="1511" y="924"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="kBf-gW-mhS">
@@ -389,7 +381,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="nbh-Hc-hQx" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="8289" y="116"/>
+            <point key="canvasLocation" x="7012" y="116"/>
         </scene>
         <!--Split View Controller-->
         <scene sceneID="Gv9-ll-Xzg">
@@ -497,7 +489,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="DtZ-R6-zLr" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="7263" y="116"/>
+            <point key="canvasLocation" x="6084" y="116"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
@@ -514,7 +506,7 @@
                                 <color key="tintColor" red="0.43999009918292553" green="1" blue="0.44982008000740148" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </view>
                             <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" axis="vertical" alignment="center" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="b12-hW-m6S">
-                                <rect key="frame" x="127" y="409" width="142" height="122.5"/>
+                                <rect key="frame" x="127" y="409" width="142" height="156.5"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Go to 7 CSP Ideals" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Nfz-w1-Scl">
@@ -531,9 +523,10 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XdA-mA-dcy">
-                                        <rect key="frame" x="56" y="58.5" width="30" height="30"/>
+                                        <rect key="frame" x="31" y="58.5" width="80" height="30"/>
+                                        <state key="normal" title="Abstraction"/>
                                         <connections>
-                                            <segue destination="pdW-4d-T8A" kind="show" id="YCl-A5-vOD"/>
+                                            <segue destination="b8i-Mc-UYC" kind="show" id="pDH-0a-9J7"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1aD-my-InE">
@@ -541,6 +534,13 @@
                                         <state key="normal" title="Change Screen"/>
                                         <connections>
                                             <segue destination="K4N-Cu-tJw" kind="show" id="sLh-wp-Qb8"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Lgv-m2-4LJ">
+                                        <rect key="frame" x="35.5" y="126.5" width="71" height="30"/>
+                                        <state key="normal" title="Go to CSP"/>
+                                        <connections>
+                                            <segue destination="pdW-4d-T8A" kind="show" id="ulK-2V-AM3"/>
                                         </connections>
                                     </button>
                                 </subviews>
