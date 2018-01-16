@@ -167,10 +167,10 @@ public class GameScene: SKScene, SKPhysicsContactDelegate
         moveInvaders()
     }
     
-    override public func didSimulatePhysics()
-    {
-        player.physicsBody?.velocity = CGVector( accelerationX * 500, dy: 0)
-    }
+//    override public func didSimulatePhysics()
+//    {
+//        player.physicsBody?.velocity = CGVector( accelerationX * 500, dy: 0)
+//    }
 
     //MARK:- Handle Motion
     func setupAccelerometer() -> Void
@@ -236,28 +236,28 @@ public class GameScene: SKScene, SKPhysicsContactDelegate
             {
                     return
             }
-            let theInvader = firstBody.node as! Invader
-            let newInvaderRow = theInvader.invaderRow - 1
-            let newInvaderCol = theInvader = theInvader.invaderCol
-            if(newInvaderRow >= 1)
-            {
-                self.enumrateChildNodes(withName: "invader")
-                {
-                    node, stop in
-                    let invader = node as! Invader
-                    if invader.invaderRow == newInvaderRow && invader.invaderCol == newInvaderCol
-                    {
-                        self.invadersThatCanFire.append(invader)
-                        stop.pointee = true
-                    }
-                }
-            }
+//            var theInvader = firstBody.node as! Invader
+//            let newInvaderRow = theInvader.invaderRow - 1
+//            let newInvaderCol = theInvader = theInvader.invaderCol
+//            if(newInvaderRow >= 1)
+//            {
+//                self.enumerateChildNodes(withName: "invader")
+//                {
+//                    node, stop in
+////                    let invader = node as! Invader
+////                    if invader.invaderRow == newInvaderRow && invader.invaderCol == newInvaderCol
+////                    {
+//                        self.invadersThatCanFire.append(invader)
+//                        stop.pointee = true
+//                    }
+//                }
+            
             let invaderIndex = invadersThatCanFire.index(of: firstBody.node as! Invader)
             if(invaderIndex != nil)
             {
-                invaderThatCanFire.remove(at: invaderIndex!)
+//                invaderThatCanFire.remove(at: invaderIndex!)
             }
-            theInvader.removeFromParent()
+//            theInvader.removeFromParent()
             secondBody.node?.removeFromParent()
             
         }
